@@ -12,12 +12,12 @@ const BillboardsPage = async ({ params }: { params: { storeId: string } }) => {
       createdAt: 'desc',
     },
   });
-
   const formattedBillboards = billboards.map((item) => ({
     id: item.id,
     label: item.label,
     createdAt: format(item.createdAt, 'MMMM do, yyyy'),
   }));
+  console.log(formattedBillboards);
 
   return (
     <div className="flex-col">
