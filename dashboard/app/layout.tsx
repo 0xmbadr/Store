@@ -9,7 +9,7 @@ import { ToastProvider } from '@/Providers/toast-provider';
 
 export const metadata = {
   title: 'Admin Dashboard',
-  description: 'Ecommerce Admin Dashboard for controlling the Shop.',
+  description: 'Ecommerce Admin Dashboard for controlling Shop operations.',
 };
 
 export default function RootLayout({
