@@ -2,6 +2,7 @@ import Footer from '@/components/layouts/footer';
 import './globals.css';
 import type { Metadata } from 'next';
 import { Urbanist } from 'next/font/google';
+import Navbar from '@/components/layouts/navbar';
 
 const font = Urbanist({ subsets: ['latin'] });
 
@@ -18,6 +19,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
+        {/* @ts-expect-error Server Component */}
+        <Navbar />
         {children}
         <Footer />
       </body>
