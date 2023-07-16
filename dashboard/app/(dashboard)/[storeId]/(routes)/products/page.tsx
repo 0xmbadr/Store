@@ -41,3 +41,4 @@ const ProductsPage = async ({ params }: { params: { storeId: string } }) => {
     </div>
   );
 };
+export default ProductsPage;
